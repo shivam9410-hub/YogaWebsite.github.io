@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    border-bottom: none;
+    font-family: 'Poppins',sans-serif;
+}
+section{
+    padding: 100px;
+}
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background:url(yoga.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.banner h2{
+    font-size: 3em;
+    color: white;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span{
+     font-weight: 700;
+   color: coral;
+     font-size: 1.5em;
+}
+.banner h3{
+    font-size: 1.5em;
+    color: white;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.btn{
+     position: relative;
+     background: #2196f3;
+     display: inline-block;
+     color: #fff;
+     border-radius: 20px;
+     margin-top: 20px;
+     padding: 10px 30px;
+     font-size: 17px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     font-weight: 700;
+     transition: .5s;
+}
+.btn:hover{
+      background-color: crimson;
+      color: white;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+transition: .5s;
+}
+header.sticky{
+     background: #fff;
+     padding: 40px 100px;
+     box-shadow: 0 5px 20px rgba( 0,0,0,.1);
+}
+header .logo{
+     color: #fff;
+     font-size: 24px;
+     text-transform: uppercase;
+   font-weight: 700;
+   letter-spacing: 2px;
+}
+header.sticky .logo{
+     color: #111;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+     position: relative;
+}
+header ul li a{
+     position: relative;
+     display: inline-block;
+     margin: 0 15px;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 700;
+     transition: .5s;
+     
+}
+header.sticky ul li a{
+     color: #111;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #112;
+}
+.heading h2{
+     font-weight: 600;
+     font-size: 30px;
+}
+.content{
+     display:  flex;
+     justify-content: space-between;
+
+}
+.contentbx{
+ padding-right: 30px;
+
+}
+.contentbx h3{
+     font-size: 24px;
+     margin-bottom: 10px;
+
+}
+.w50{
+  min-width: 50%;  
+ 
+}
+img{
+    max-width: 100%;
+}
+.services{
+     background: #111;
+}
+.heading .white{
+color: white;
+}
+.services .content{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     flex-direction: row;
+
+}
+.services .content .servicebx{
+    position: relative;
+   
+    padding:40px 20px;
+     background: #222;
+     color: #dd2233;
+     width: 300px;
+     overflow: hidden;
+     height: 250px;
+     box-shadow: 0 0 5px white;
+     margin: 20px;
+     text-align: center;
+     transition: .51s;
+}/*
+.services .content .servicebx:hover{
+    background: #2196f3;
+    color:white;
+}
+.services .content .servicebx img{
+       max-width: 80px;
+       filter: invert(1);
+}
+.services .content .servicebx h2{
+font-size: 20px;
+font-weight: 600;
+}
+*/
+
+.services .content .servicebx .yogi {
+
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    height: 80%;
+
+    
+}
+.services .content .servicebx .yogi img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.services .content .servicebx .content {
+    position: absolute;
+bottom:2%;
+
+
+}
+.services .content .servicebx .content h3 {
+      text-align: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+
+}
+.services .content .servicebx:hover .yogi img {
+   transform: scale(1.2);
+} 
+
+
+.work .content{
+     display: flex;
+     justify-content:center;
+     flex-wrap: wrap;
+
+}
+.work .content .workbx{
+    width: 50%;
+    padding: 20px;
+
+}
+.work .content .workbx img{
+     max-width: 100%;
+     
+}
+.work h3{
+      font-weight: 600;
+      font-size: 20px;
+      align-items: center;
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 20px 0;
+}
+.work .content .workbx a{
+      margin: 10px;
+      background: #fff;
+      background: red;
+      padding: 5px 20px;
+      border-radius: 10px;
+      transition: .5s;
+}
+.fa{
+      color: white;
+}
+.work .content .workbx a:hover{
+      background: blue;
+
+}
+
+.new{
+      background: black;
+}
+.new .heading,.types{
+      color: white;
+     
+}
+.new .heading h2{
+      
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-weight: 600;
+       font-size: 30px;
+}
+.new .heading p{
+      font-size: 24px;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.new .types{
+      display: flex;
+      flex-wrap: wrap;
+     padding: 20px;
+      justify-content: space-around;
+}
+.new .types h2{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      margin: 10px;
+    
+}
+.testimonial{
+     background: #f7f7f7;
+
+
+}
+
+.testimonial .content{
+     display: flex;
+     justify-content:space-between;
+     flex-wrap: wrap;
+
+}
+.testimonial .content .testimonialbx{
+     max-width: calc(50% - 40px);
+    padding: 60px 40px;
+margin: 20px;
+background: #2196f3;
+
+
+}
+.testimonial .content .testimonialbx p{
+      color: #fff;
+      font-style: italic;
+      font-size: 16px;
+      font-weight: 300;
+}
+.testimonial .content .testimonialbx h3{
+      margin-top: 40px;
+      text-align: end;
+      color: #fff;
+      line-height: 1em;
+}
+.testimonial .content .testimonialbx h3 span{
+      font-size: 14px;
+      font-weight: 400;
+}
+.contact{
+      background: #111;
+}
+.formbx{
+      min-width: 60%;
+}
+.formbx form{
+      display: flex;
+      flex-direction: column;
+}
+.formbx form h3,
+.contactinfo h3{
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+}
+
+.formbx form input,
+.formbx form  textarea{
+      margin-bottom: 20px;
+      padding: 15px;
+      font-size: 16px;
+      background: transparent;
+      border: none;
+      outline: none;
+      background: #222;
+      color: #fff;
+ resize: none;
+}
+.formbx form textarea{
+      min-height: 200px;
+}
+.formbx form input::placeholder,
+.formbx form textarea::placeholder{
+      color: #999;
+}
+.formbx form input[type="submit"]{
+    max-width:100px;
+    background: #2196c3;
+    cursor: pointer;
+    text-transform: 2px;
+}
+.contactinfo{
+      min-width: 40%;
+
+}
+.contactinfobx{
+      position: relative;
+}
+
+.contactinfobx .box{
+      position: relative;
+      padding: 20px 0;
+      display: flex;
+
+}
+.contactinfox .box .icon{
+      min-width: 40px;
+      padding-top: 4px;
+      color: #fff;
+      display: flex;
+      justify-content:  center;
+      align-items: center;
+     font-size: 24px;
+
+}
+.contactinfobx .box .text{
+      display: flex;
+      margin-left: 20px;
+      font-size: 16px;
+      color: #fff;
+      flex-direction: column;
+      font-weight: 300;
+
+}
+.contactinfobx .box .text h3{
+      font-weight: 500;
+      color: #2196f3;
+      margin-bottom: 0;
+
+}
+.copyright{
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+}
+.textbx .animate::after{
+       content: '';
+       color: #222;
+       font-weight: 700;
+       font-size: 30px;
+       animation: words infinite 4s;
+}
+.myintro::before{
+      content: '';
+      color: #223311;
+      font-weight: 700;
+      font-size:30px;
+      animation: intro infinite 4s;
+} 
+@keyframes intro{
+      0%{
+             content: "Student";
+      }
+      50%{
+            content: "Frontend Developer";
+     }
+    100%{
+      content: "PAHADI";
+}
+}
+@keyframes words{
+      0%{
+             content: "Calmness";
+      }
+      50%{
+            content: "Stability";
+     }
+    100%{
+      content: "Flexibility";
+}
+}
+.socialmedia{
+       display: flex;
+       justify-content: center;
+}
+.socialmedia li a{
+ margin: 15px;
+ 
+}
+.socialmedia li a i.fa{
+    color: #fff;
+    width: 30px;
+      
+     }
+
+/*Responsive design starts from here */
+@media(max-width:991px){
+    .banner{
+           background: url(yogagirl.jpg);
+           background-position: center;
+           background-size: cover;
+           object-fit: cover;
+           background-repeat: no-repeat;
+    }
+      header,
+      header.sticky{
+            padding: 20px 20px;
+            z-index: 1000;
+      }
+      
+      .menu{
+            position: fixed;
+            top: 75px;
+            left: -100%;
+            display: block;
+            padding: 100px 50px;
+            text-align: center;
+            background: #fff;
+            width: 100%;
+            height: 100vh;
+            transition: .5s;
+            z-index: 999;
+            border-top: 1px solid rgba(0,0,0,.2);
+
+      }
+      .menu.active{
+            left: 0;
+      }
+      header ul li {
+            line-height: 40px;
+            align-items: center;
+      }
+
+     header ul li a{
+              font-weight: 700;
+          color: #111;
+     }
+     .toggle{
+           width: 40px;
+           height: 40px;
+           background: url(menu.png);
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size:30px;
+           cursor: pointer;
+     }
+ 
+.toggle.active{
+  
+     background: url(close.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:25px;
+     cursor: pointer;
+}
+header.sticky .toggle{
+      filter: invert(1);
+}
+section{
+      padding: 100px 50px 100px;
+}
+.banner h2{
+      font-size: 2.5em;
+}
+
+.banner h3{
+     font-size: 1.5em;
+     color: red;
+     font-weight: 600;
+}
+.btn{
+     margin-top: 10px;
+     padding: 10px 20px;
+     font-size: 16px;
+
+}
+.heading h2{
+      font-size: 24px;
+
+}
+.contentbx h3{
+      font-size: 20px;
+}
+.content{
+      flex-direction: column;
+}
+.w50{
+      margin-bottom: 20px;
+}
+
+.services .content .servicebx{
+      margin: 10px;
+}
+.work .content .workbx{
+      width: 100%;
+      padding: 10px;
+
+}
+
+
+
+.testimonial .content .testimonialbx {
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 20px;
+    background: #2196f3;
+}
+.testimonial .content .testimonialbx h3{
+     margin-top: 20px;
+}
+.contactinfo{
+     margin: 20px 0;
+}
+.textbx h2 span{ 
+      font-size: 30px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+     
+}
+}
+
+@media(max-width:600px){
+      header,
+      header.sticky{
+            padding: 20px 20px;
+      }
+      .banner{
+            padding: 150px 20px 100px;
+      }
+      section{
+             padding: 100px 20px;
+      }
+      
+}
