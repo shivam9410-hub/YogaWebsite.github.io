@@ -26,12 +26,14 @@ section{
 .banner h2{
     font-size: 3em;
     color: white;
+   font-family: 'Tangerine', cursive;
     font-weight: 500;
     line-height: 1.5em;
 }
 .banner h2 span{
      font-weight: 700;
    color: coral;
+    font-family: 'Tangerine', cursive;
      font-size: 1.5em;
 }
 .banner h3{
